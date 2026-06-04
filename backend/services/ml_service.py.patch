@@ -1,0 +1,22 @@
+--- /home/irfan/Project/ML/Sistem/backend/services/ml_service.py
++++ /home/irfan/Project/ML/Sistem/backend/services/ml_service.py
+@@ -107,13 +107,7 @@
+             # Load PyTorch model
+             logger.info(f"Loading PyTorch model from {model_path}")
+-            loaded_data = torch.load(
++            self._model = torch.load(
+                 model_path,
+-                map_location=self._device,
+-                weights_only=False
++                map_location=self._device,
++                weights_only=False
+             )
+-            
+-            if isinstance(loaded_data, dict) and 'model' in loaded_data:
+-                state_dict = loaded_data['model']
+-                self._model = models.resnet18()
+-                self._model.fc = torch.nn.Linear(self._model.fc.in_features, len(self._labels))
+-                self._model.load_state_dict(state_dict)
+-            else:
+-                self._model = loaded_data
+             
