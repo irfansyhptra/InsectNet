@@ -20,8 +20,8 @@ An AI-Powered Species Recognition system that identifies insect species using Ma
 ## 📸 Screenshots
 
 <div style="display: flex; gap: 10px;">
-  <img src="frontend/public/20260604235002.png" width="48%" alt="Screenshot 1">
-  <img src="frontend/public/20260604234934.png" width="48%" alt="Screenshot 2">
+  <img src="assets/20260604235002.png" width="48%" alt="Screenshot 1">
+  <img src="assets/20260604234934.png" width="48%" alt="Screenshot 2">
 </div>
 
 ---
